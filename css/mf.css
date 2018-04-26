@@ -1,0 +1,35 @@
+/* CSS Document (SASS) */
+@font-face {
+  font-family: "Masterly";
+  src: url("../assets/webfonts/Masterly-Regular.eot?v=0.675") format("embedded-opentype"), url("../assets/webfonts/Masterly-Regular.woff2?v=0.675") format("woff2"), url("../assets/webfonts/Masterly-Regular.woff?v=0.675") format("woff"), url("../assets/webfonts/Masterly-Regular.ttf?v=0.675") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.mf {
+  display: inline-block;
+  font: normal normal normal 14px/1 Masterly;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.mf-sm {
+  font-size: 0.66667em;
+  line-height: 0.375em;
+  vertical-align: 20%; }
+
+.mf-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.mf-2x {
+  font-size: 2em; }
+
+.mf-3x {
+  font-size: 3em; }
+
+.mf-4x {
+  font-size: 4em; }
+
+.mf-5x {
+  font-size: 5em; }

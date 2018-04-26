@@ -1,0 +1,22 @@
+/* CSS Document */
+.help-icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-worlds:before, .icon-maps:before, .icon-signs:before, .icon-structures:before {
+  background-image: url("../assets/images/Worlds.png");
+  background-size: 16px 16px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  content: ""; }
+
+.icon-maps:before {
+  content: url(""); }

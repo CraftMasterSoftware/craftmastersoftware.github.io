@@ -1,0 +1,256 @@
+/* CSS Document */
+/*!
+ *  Masterly 0.675 by @CraftMasterKev - http://craftmastersoftware.com - @CraftMasterSW
+ *  @Copyright 2016 CraftMaster Software Inc. All Rights Reserved.
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'Masterly';
+	src: url('../assets/webfonts/Masterly-Regular.eot');
+  src: url('../assets/webfonts/Masterly-Regular.eot?#iefix') format('embedded-opentype'), url('../assets/webfonts/Masterly-Regular.woff2') format('woff2'), url('../assets/webfonts/Masterly-Regular.woff') format('woff'), url('../assets/webfonts/Masterly-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.mf {
+  display: inline-block;
+  font: normal normal normal 14px/1 Masterly;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.mf-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.mf-2x {
+  font-size: 2em;
+}
+.mf-3x {
+  font-size: 3em;
+}
+.mf-4x {
+  font-size: 4em;
+}
+.mf-5x {
+  font-size: 5em;
+}
+
+.mf-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.mf-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.mf-ul > li {
+  position: relative;
+}
+.mf-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.mf-li.mf-lg {
+  left: -1.85714286em;
+}
+
+.mf-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+
+.mf-pull-left {
+  float: left;
+}
+.mf-pull-right {
+  float: right;
+}
+.mf.mf-pull-left {
+  margin-right: .3em;
+}
+.mf.mf-pull-right {
+  margin-left: .3em;
+}
+
+/* Animation Definitions */
+/* Spin, Spin-rotate-45 */
+.mf-spin {
+  -webkit-animation: mf-spin 2s infinite linear;
+  animation: mf-spin 2s infinite linear;
+}
+.mf-spin-rotate-45 {
+  -webkit-animation: mf-spin 1s infinite steps(8);
+  animation: mf-spin 1s infinite steps(8);
+}
+.mf-spin-rotate-60 {
+  -webkit-animation: mf-spin 1s infinite steps(6);
+  animation: mf-spin 1s infinite steps(6);
+}
+@-webkit-keyframes mf-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes mf-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* Bounce */
+.mf-bounce {
+    display: inline-block;
+    position: relative;
+    -webkit-animation: mf-bounce 1s infinite linear;
+    animation: mf-bounce 1s infinite linear;
+}
+@-webkit-keyframes mf-bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes mf-bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+/* Pulse */
+.mf-pulse {
+	display: inline-block;
+	-webkit-animation: mf-pulse 2s infinite linear;
+	animation: mf-pulse 2s infinite linear;
+}
+@-webkit-keyframes mf-pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes mf-pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* Transform Definitions */
+.mf-rotate-90 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.mf-rotate-180 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.mf-rotate-270 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.mf-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.mf-flip-vertical {
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .mf-rotate-90,
+:root .mf-rotate-180,
+:root .mf-rotate-270,
+:root .mf-flip-horizontal,
+:root .mf-flip-vertical {
+  filter: none;
+}
+
+.mf-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.mf-stack-1x,
+.mf-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.mf-stack-1x {
+  line-height: inherit;
+}
+.mf-stack-2x {
+  font-size: 2em;
+}
+
+
+.mf-inverse {
+  color: #ffffff;
+}
+
+
+/* Masterly uses the Unicode Basic Multilingual Plane (BMP) Private Use Area (PUA) range U+E000..U+F8FF
+   to ensure screenreaders do not read off random characters that represent icons (up to 6,400 characters) */
+.mf-cmHexE001:before {
+  content: "\e001";
+}
+.mf-cmHexE001:before {
+  content: "\e002";
+}
+.mf-cmHexE001-o:before {
+  content: "\e003";
+}
+.mf-uiWorlds:before {
+  content: "\e005";
+}
+/* Examples */
+.mf-gear:before,
+.mf-cog:before { /* overloading names */
+  content: "\f013";
+}
+.mf-trash-o:before { /* -o "outline" */
+  content: "\f014";
+}
+
+
+/* Screen Reader Support */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}

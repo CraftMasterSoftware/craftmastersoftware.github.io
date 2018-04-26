@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.indicator {
+	width: 10em;
+	height: 10em;
+}
+
+.path {
+  stroke-dasharray: 500;
+	animation: dash 5s linear infinite;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}

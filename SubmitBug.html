@@ -1,0 +1,179 @@
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/Masterly.css" />
+<link rel="stylesheet" type="text/css" href="css/craftmaster.css" />
+
+<title>CraftMaster Software - Submit A Bug</title>
+<style>
+.row.top, .pad-small {
+	margin-top: 16px;
+}
+.row.bottom, .pad-medium {
+	margin-top: 32px;
+}
+.text-default {
+	color: rgba(242,102,32,1.00);
+}
+div>p>label {
+	color:rgba(242,102,32,1.00);
+}
+div.returnToTop {
+	font-weight: 900;
+	margin: 16px auto 16px auto;
+}
+h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
+	margin-bottom: 24px;
+}
+p.text-left label {
+		margin-bottom: 0px;
+}
+</style>
+<script type="text/javascript">
+function LeavingField(id)
+{
+	if(document.getElementById(id).value == " ")
+	{
+		document.getElementById(id).value = "";
+	}
+}
+function SelectAll(id)
+{
+	var theArea = document.getElementById(id);
+	//document.getElementById(id).focus();
+	if(theArea.value == "")
+	{
+		theArea.value = " ";
+	}
+	setTimeout(function() {
+		theArea.select();
+	
+	}, 50);
+}
+</script>
+</head>
+<body id="help" class="submitBug bgNone" style="overflow: auto; overflow-x: hidden; overflow-y: visible; min-width: 800px;">
+<!-- Submit a Bug -->
+<div class="content container-fluid text-center"> 
+  <!-- Page Header -->
+  <div class="row well container-fluid text-center bg-pattern1-dark">
+  	<!-- Tagline -->
+		<div id="theTagline">
+			<h2 class="MasterlyText" data-letters="Submit a Bug">Submit a Bug</h2>
+		</div>
+		
+	</div>
+  <!-- Bug Form -->
+  <a  name="BugForm" id="BugForm"></a>
+  <div class="row">
+  	<div class="col-md-8 col-md-offset-2">
+  	  <h4 class="lead text-muted">Thanks for helping stomp out the bugs in CraftMaster. &nbsp;Please complete the form below to submit a bug. All fileds are required.</h4><br />
+  	</div>
+		<div class="col-md-8 col-md-offset-2">
+			<form id="BugFormElement" class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="emailAddress">Email:</label>
+        <div class="col-xs-9">
+            <input type="email" class="form-control" id="emailAddress" placeholder="your@email.com" required="required" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="buildID">Build ID:</label>
+        <div class="col-xs-9 text-left">
+    			<input type="text" id="buildID" class="form-control" placeholder="Located in the upper right of CraftMaster's Help Window." required="required" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="bugTitle">Bug Title:</label>
+        <div class="col-xs-9">
+            <input type="text" onfocus="SelectAll(this.id);" onblur="LeavingField(this.id);" class="form-control" id="bugTitle" placeholder="Simple/Short description of the bug..." required="required" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="stepsToReproduce">Steps To Reproduce:</label>
+        <div class="col-xs-9">
+            <textarea rows="3" onfocus="SelectAll(this.id);" onblur="LeavingField(this.id);" class="form-control" id="stepsToReproduce" placeholder="This is what I did to make it happen..." required="required"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="expectedBehavior">Expected Behavior:</label>
+        <div class="col-xs-9">
+            <textarea rows="3" onfocus="SelectAll(this.id);" onblur="LeavingField(this.id);" class="form-control" id="expectedBehavior" placeholder="This is what I thought would happen..." required="required"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="actualBehavior">Actual Behavior:</label>
+        <div class="col-xs-9">
+            <textarea rows="3" onfocus="SelectAll(this.id);" onblur="LeavingField(this.id);" class="form-control" id="actualBehavior" placeholder="This is what actually happened..." required="required"></textarea>
+        </div>
+    </div>
+    <div class="form-group text-left">
+      <label class="control-label col-xs-3">OS:</label>
+      <div class="col-xs-3">
+				<label class="radio-inline">
+					<input type="radio" id="osRadios1" name="osRadios" value="Win7" required="required" /> Windows 7
+				</label>
+			</div>
+      <div class="col-xs-3">
+				<label class="radio-inline">
+					<input type="radio" id="osRadios2" name="osRadios" value="Win7" required="required" /> Windows 8
+				</label>
+			</div>
+      <div class="col-xs-3">
+				<label class="radio-inline">
+					<input type="radio" id="osRadios3" name="osRadios" value="Win7" required="required" /> Windows 10
+				</label>
+			</div>
+      <div class="col-xs-3 col-xs-offset-3">
+				<label class="radio-inline">
+					<input type="radio" id="osRadios4" name="osRadios" value="mac1010" required="required" /> macOS 10.10
+				</label>
+			</div>
+      <div class="col-xs-3">
+				<label class="radio-inline">
+					<input type="radio" id="osRadios5" name="osRadios" value="mac1011" required="required" /> macOS 10.11
+				</label>
+			</div>
+      <div class="col-xs-3">
+				<label class="radio-inline">
+					<input type="radio" id="osRadios6" name="osRadios" value="mac1012" required="required" /> macOS 10.12
+				</label>
+			</div>
+    </div>
+    <div class="form-group">
+			<label class="control-label col-xs-3" for="isReproduceable">Reproduceable:</label>
+        <div class="col-xs-9 text-left">
+            <label class="checkbox-inline">
+                <input type="checkbox" id="isReproduceable" value="isReproduceable" /> Yes, 100% reproduceable. </label>
+        </div>
+    </div>
+    <div class="form-group">
+			<label class="control-label col-xs-3" for="hasFiles">Addtional File(s):</label>
+      <div class="col-xs-9 text-left">
+				<label class="checkbox-inline">
+					<input type="checkbox" id="hasFiles" value="hasFiles" /> Yes, I have files I can share with you. You can contact me.
+				</label>
+			</div>
+    </div>
+    <br />
+    <div class="form-group">
+        <div class="col-xs-12">
+            <input onclick="parent.window.gCMHelp.SubmitBug(document,false);" type="button" class="btn btn-lg btn-default" value="Copy to Clipoard" />
+            &nbsp;&nbsp;&nbsp;
+            <input onclick="parent.window.gCMHelp.SubmitBug(document,true);" type="button" class="btn btn-lg btn-standard" value="Send an E-mail" />
+        </div>
+    </div>
+</form>
+		</div>
+		<div class="col-md-12 returnToTop">
+			<a href="#GettingStarted">&uArr; Return To Top &uArr;</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+//  Mixins
+//  --------------------------------
+
+@mixin mf-icon()
+  display: inline-block
+  font: normal normal normal #{$mf-font-size-base}/#{$mf-line-height-base} Masterly
+  font-size: inherit // Override
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+
+@mixin mf-icon-rotate($degrees, $rotation)
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})"
+  -webkit-transform: rotate($degrees)
+  -ms-transform: rotate($degrees)
+  transform: rotate($degrees)
+
+@mixin mf-icon-flip($hPoint, $vPoint, $rotation)
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation}, mirror=1)"
+  -webkit-transform: scale($hPoint, $vPoint)
+  -ms-transform: scale($hPoint, $vPoint)
+  transform: scale($hPoint, $vPoint)
+
+
+//  Hidden (Screen Reader) Content
+@mixin sr-only
+  position: absolute
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0,0,0,0)
+  border: 0
+
+@mixin sr-only-focusable
+  &:active,
+  &:focus
+    position: static
+    width: auto
+    height: auto
+    margin: 0
+    overflow: visible
+    clip: auto
+
